@@ -1,0 +1,174 @@
+@font-face {
+  font-family: "pretty";
+  src: url(../font/NanumSquareR.woff);
+}
+.App {
+  font-family: "pretty";
+  text-align: center;
+  display: flex;
+  color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #282c34;
+}
+div {
+  box-sizing: border-box;
+}
+.todo-app {
+  width: 40%;
+  background: #202123;
+  padding: 10px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-input {
+  font-size: 1.25em;
+
+  width: 80%;
+  max-width: 650px;
+  padding: 14px 32px 14px 16px;
+  border-radius: 5px;
+  border: 2px solid rgb(0, 0, 0);
+  width: 80%;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #979696;
+}
+
+.todo-button {
+  max-width: 150px;
+  padding: 8px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  background: #313131;
+  color: rgb(255, 239, 239);
+  text-transform: capitalize;
+  width: 20%;
+  font-size: 16px;
+}
+
+.todo-input.edit {
+  border: 2px solid #606569;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px auto;
+  color: white;
+  border: 3px solid rgb(0, 0, 0);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  background: rgb(55, 54, 54);
+  max-width: 800px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #000000;
+}
+
+.edit-icon {
+  color: #000000;
+}
+
+.chatbox {
+  flex: 1;
+  background-color: #343541;
+  position: relative;
+  overflow-y: scroll
+}
+
+.chat-input-holder {
+  padding: 24px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.chat-input-textarea {
+  background-color: #40414f;
+  width: 90%;
+  padding: 12px;
+  color: white;
+  font-size: 1.25em;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+}
+
+.chat-log {
+
+  text-align: left;
+}
+.chat-message.chatgpt {
+  background-color: #444654;
+  
+}
+.chat-message-center{
+  padding: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  margin-left: 70px;
+  margin-right: 10px;
+}
+.avatar {
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.avatar.chatgpt {
+  background: #0da37f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.message {
+  padding-left: 40px;
+  padding-right: 40px;
+}
