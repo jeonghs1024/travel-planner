@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+https://jeonghs1024.github.io/travel-planner/
+
+
+
+Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
